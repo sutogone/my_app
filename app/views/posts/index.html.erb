@@ -1,0 +1,8 @@
+<h1>トップページなのおおお</h1>
+<%= link_to  "新しいスタンドを追加する", '/posts/new' %>
+<% @posts.each do |post|%>
+  <div>
+    <%= post.jojo %>
+    <%= post.created_at%>
+  </div>
+<% end %>
